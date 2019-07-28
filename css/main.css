@@ -1,11 +1,14 @@
+/* Align top navbar */
 li {
     text-align: center;
     display: inline;
 }
 
+/* Position navbar links to top right */
 .right {
     float: right;
     margin-left: 1.5em;
+    margin-right: 1.5em;
     margin-top: 1.5em;
     text-decoration: none;
     font-size: 13px;
@@ -13,10 +16,12 @@ li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Underline top right links when hovered */
 .right:hover {
     text-decoration: underline;
 }
 
+/* Position navbar links to top left */
 .left {
     float: left;
     margin-left: 1.5em;
@@ -27,6 +32,7 @@ li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Underline top left links when hovered */
 .left:hover {
     text-decoration: underline;
 }
@@ -35,6 +41,7 @@ li {
     position: relative;
 }
 
+/* Set google logo at fixed position */
 .logo img {
     position: fixed;
     top: 32%;
@@ -43,6 +50,7 @@ li {
     -ms-transform: translate(-50%, -50%);
 }
 
+/* Set position of search form and size */
 .sbar {
     position: fixed;
     top: 45%;
@@ -56,10 +64,18 @@ li {
     border: 1px solid #F2F2F2;
 }
 
+/* Display shadow when search form hovered */
 .sbar:hover {
     box-shadow: 0px 0px 5px 2px #F2F2F2;
 }
 
+/* Display shadow when search form clicked */
+.sbar:focus {
+    box-shadow: 0px 0px 5px 2px #F2F2F2;
+    outline: none;
+}
+
+/* Set position and size of google search button */
 #button1 {
     position: fixed;
     top: 45%;
@@ -75,6 +91,7 @@ li {
     line-height: 35px;
 }
 
+/* Set position and size of "lucky" button */
 #button2 {
     position: fixed;
     top: 45%;
@@ -90,6 +107,7 @@ li {
     line-height: 35px;
 }
 
+/* Text characteristics of buttons */
 .btns {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -98,10 +116,12 @@ li {
     text-decoration: none;
 }
 
+/* Change color/border of buttons when hovered */
 .btns:hover {
     color: rgb(17, 7, 7);
     border: .8px solid #c4c4bd;
 }
+
 
 .navbar {
     overflow: hidden;
@@ -125,7 +145,7 @@ li {
   
   /* Change background on mouse-over */
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Not working */
   }
 
 .r-navbar {
